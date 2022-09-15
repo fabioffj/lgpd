@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Orçamento</title>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<h1>Orçamento</h1>
+<div id="list">
+  <ol>
+    <h3>
+      <li>Sua empresa possui contrato que compartilha ou dá acesso a dados de pessoas físicas com quantos parceiros comerciais?</li>
+    </h3>
+    <form>
+      <input type="radio" id="a" name="parceiros" value="1180">
+      <label for="a">1 a 3</label><br>
+      <input type="radio" id="b" name="parceiros" value="2360">
+      <label for="b">4 a 6</label><br>
+      <input type="radio" id="c" name="parceiros" value="3540">
+      <label for="c">7 a 9</label><br>
+      <input type="radio" id="d" name="parceiros" value="4720">
+      <label for="d">10 ou mais</label>
+    </form>
+    <h3>
+      <li>Sua empresa possui política de armazenamento e descarte de dados coletados?</li>
+    </h3>
+    <form>
+      <input type="radio" id="e" name="politica" value="245">
+      <label for="possui">Possui</label><br>
+      <input type="radio" id="f" name="politica" value="490">
+      <label for="npossui">Não possui</label>
+    </form>
+    <h3>
+      <li>Sua empresa recebe dados de pessoas físicas de outras empresas?</li>
+    </h3>
+    <form>
+      <input type="radio" id="g" name="outras" value="490">
+      <label for="sim">Sim</label><br>
+      <input type="radio" id="h" name="outras" value="245">
+      <label for="nao">Não</label>
+    </form>
+    <h3>
+      <li>Quantos sistemas de gestão a sua empresa possui?</li>
+    </h3>
+    <form>
+      <input type="radio" id="i" name="gestao" value="1180">
+      <label for="a">Apenas 1</label><br>
+      <input type="radio" id="j" name="gestao" value="2360">
+      <label for="b">2 a 3</label><br>
+      <input type="radio" id="k" name="gestao" value="3540">
+      <label for="c">4 a 5</label><br>
+      <input type="radio" id="l" name="gestao" value="4720">
+      <label for="d">6 ou mais</label>
+    </form>
+    <h3>
+      <li>Sua empresa possui quantos funcionários?</li>
+    </h3>
+    <form>
+      <input type="radio" id="m" name="funcionarios" value="1180">
+      <label for="e">Até 50</label><br>
+      <input type="radio" id="n" name="funcionarios" value="3540">
+      <label for="f">De 51 a 150</label><br>
+      <input type="radio" id="o" name="funcionarios" value="5900">
+      <label for="g">Mais de 151</label><br>
+    </form>
+    <h3>
+      <li>Sua empresa possui site de e-commerce ou aplicativo?</li>
+    </h3>
+    <form>
+      <input type="radio" id="p" name="ecommerce" value="490">
+      <label for="sim">Sim</label><br>
+      <input type="radio" id="q" name="ecommerce" value="245">
+      <label for="nao">Não</label>
+    </form>
+    <h3>
+      <li>Sua empresa coleta algum dado biométrico, de crianças ou adolescentes, de saúde ou sigiloso de seus clientes ou funcionários?</li>
+    </h3>
+    <form>
+      <input type="radio" id="r" name="sensivel" value="490">
+      <label for="sim">Sim</label><br>
+      <input type="radio" id="s" name="sensivel" value="245">
+      <label for="nao">Não</label>
+    </form>
+    <h3>
+      <li>Sua empresa compartilha dados de seus funcionários ou clientes com terceiros? (Ex.: planos de saúde, contador, vale-alimentação)</li>
+    </h3>
+    <form>
+      <input type="radio" id="t" name="terceiros" value="490">
+      <label for="sim">Sim</label><br>
+      <input type="radio" id="u" name="terceiros" value="245">
+      <label for="nao">Não</label>
+    </form>
+    <h3>
+      <li>Sua empresa compartilha dados (pessoa física) internacionais?</li>
+    </h3>
+    <form>
+      <input type="radio" id="sim" name="internacional" value="490">
+      <label for="sim">Sim</label><br>
+      <input type="radio" id="nao" name="internacional" value="245">
+      <label for="nao">Não</label>
+    </form>
+    <h3>Seu orçamento é de R$: <input type="text" id="total" value="0"></h3>
+  </ol>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
