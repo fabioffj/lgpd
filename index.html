@@ -7,13 +7,13 @@
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<h1>Orçamento</h1>
+<h1>Orçamento LGPD</h1>
 <div id="list">
-  <ol>
+  <form>
+  <ol>    
     <p>
       <li>Sua empresa possui contrato que compartilha ou dá acesso a dados de pessoas físicas com quantos parceiros comerciais?</li>
     </p>
-    <form>
       <input type="radio" id="a" name="parceiros" value="1180">
       <label for="a">1 a 3</label><br>
       <input type="radio" id="b" name="parceiros" value="2360">
@@ -22,29 +22,23 @@
       <label for="c">7 a 9</label><br>
       <input type="radio" id="d" name="parceiros" value="4720">
       <label for="d">10 ou mais</label>
-    </form>
     <p>
       <li>Sua empresa possui política de armazenamento e descarte de dados coletados?</li>
     </p>
-    <form>
       <input type="radio" id="e" name="politica" value="245">
       <label for="e">Possui</label><br>
       <input type="radio" id="f" name="politica" value="490">
       <label for="f">Não possui</label>
-    </form>
     <p>
       <li>Sua empresa recebe dados de pessoas físicas de outras empresas?</li>
     </p>
-    <form>
       <input type="radio" id="g" name="outras" value="1180">
       <label for="g">Sim</label><br>
       <input type="radio" id="h" name="outras" value="245">
       <label for="h">Não</label>
-    </form>
     <p>
       <li>Quantos sistemas de gestão a sua empresa possui?</li>
     </p>
-    <form>
       <input type="radio" id="i" name="gestao" value="1180">
       <label for="i">Apenas 1</label><br>
       <input type="radio" id="j" name="gestao" value="2360">
@@ -53,66 +47,54 @@
       <label for="k">4 a 5</label><br>
       <input type="radio" id="l" name="gestao" value="4720">
       <label for="l">6 ou mais</label>
-    </form>
     <p>
       <li>Sua empresa possui quantos funcionários?</li>
     </p>
-    <form>
       <input type="radio" id="m" name="funcionarios" value="1180">
       <label for="m">Até 50</label><br>
       <input type="radio" id="n" name="funcionarios" value="3540">
       <label for="n">De 51 a 150</label><br>
       <input type="radio" id="o" name="funcionarios" value="5900">
       <label for="o">Mais de 151</label><br>
-    </form>
     <p>
       <li>Sua empresa possui site de e-commerce, aplicativo ou recedes sociais que realizem contato com o cliente?</li>
     </p>
-    <form>
       <input type="radio" id="p" name="ecommerce" value="1180">
       <label for="p">Sim</label><br>
       <input type="radio" id="q" name="ecommerce" value="245">
       <label for="q">Não</label>
-    </form>
     <p>
       <li>Sua empresa coleta algum dado biométrico, de crianças ou adolescentes, de saúde ou sigiloso de seus clientes ou funcionários?</li>
     </p>
-    <form>
       <input type="radio" id="r" name="sensivel" value="2360">
       <label for="r">Sim</label><br>
       <input type="radio" id="s" name="sensivel" value="245">
       <label for="s">Não</label>
-    </form>
     <p>
       <li>Sua empresa compartilha dados de seus funcionários ou clientes com terceiros? (Ex.: planos de saúde, contador, vale-alimentação)</li>
     </p>
-    <form>
       <input type="radio" id="t" name="terceiros" value="1180">
       <label for="t">Sim</label><br>
       <input type="radio" id="u" name="terceiros" value="245">
       <label for="u">Não</label>
-    </form>
     <p>
       <li>Sua empresa compartilha dados (pessoa física) internacionais?</li>
     </p>
-    <form>
       <input type="radio" id="v" name="internacional" value="2360">
       <label for="v">Sim</label><br>
       <input type="radio" id="x" name="internacional" value="245">
       <label for="x">Não</label>
-    </form>
     <p>
       <li>Sua empresa tem interesse em realizar adequação através de uma plataforma especializada?*</li>
     </p>    
-    <form>
       <input type="radio" id="y" name="plataforma" value="600">
       <label for="y">Sim</label><br>
       <input type="radio" id="z" name="plataforma" value="245">
-      <label for="z">Não</label>
-    </form>    
-    <p>*: o custo da plataforma é mensal</p>
-    <p>Seu orçamento é de R$: <input type="text" id="total" value="0"></p>
+      <label for="z">Não</label>    
+    <h2>*: o custo da plataforma é mensal</h2>
+    <p>Seu orçamento é de R$: <input type="text" id="total" value="0"></p>  
   </ol>
+  </form>
 </div>
 <script  src="./script.js"></script>
 </body>
